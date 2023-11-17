@@ -10,8 +10,8 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
-const server = app.listen(process.env.PORT, () =>
-  console.log(`Server started on ${process.env.PORT}`)
+const server = app.listen("https://chat-backend-indol.vercel.app/", () =>
+  console.log(`Server started on https://chat-backend-indol.vercel.app/`)
 );
 const io = socket(server, {
   cors: {
